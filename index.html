@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Theme.css">
@@ -16,14 +17,27 @@
     <nav>
         <div class="navbar">
             <a href="index.html"><img src="Assets/logo.png" alt="logo" height="40px" width="40px"></a>
-            <a href="#">Pricing</a>
-            <a href="#">About Us</a>
-            <a href="#">FAQ</a>
-            <a href="#">Login</a>
-            <a href="#"><button class="yellowB"> Start Now</button></a>
+            <!-- <div class="menu-toggle" id="menu-toggle">
+                <div class="hamburger"></div>
 
+            </div> -->
+            <div class="nav-Content">
+                <div class="menu-icon" id="menu-icon" style="padding: 5px; margin-right: 20px; z-index: 1002;">
+                    <div id="show"><i class="fa-solid fa-bars fa-bounce" style="color: rgba(157, 150, 150, 0.775)"></i></div>
+                    <div id="hide" style="display: none; "><i class="fa-solid fa-xmark" style="color: rgba(217, 206, 206, 0.901);"></i>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="ShopNow.html">Shop Now</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Login.html"><button class="yellowB"> Start Now</button></a></li>
+                    </ul>
+                </div>
+            </div>
 
-        </div>
     </nav>
     <section id="head" style="margin-bottom: 0%;">
         <div class="Headcenter">
@@ -32,7 +46,7 @@
             <p>
                 Harnessing the Power to Redefine Interior Aesthetics
             </p>
-            <button class="yellowB">Start Now</button>
+           <a href="Login.html"><button class="yellowB">Start Now</button></a> 
         </div>
     </section>
 
@@ -159,7 +173,7 @@
             </div>
 
         </div>
-        <div class="container_3">
+        <div class="container_3 rev">
             <div class="text">
                 <h2>AfterBeforeCrafting Dreams: Introducing ICrave Creations</h2>
                 <p>
@@ -182,7 +196,7 @@
             </div>
 
         </div>
-        <div class="container_3">
+        <div class="container_3 rev">
             <div class="text">
                 <h2>AfterBeforeCrafting Dreams: Introducing ICrave Creations</h2>
                 <p>
@@ -199,10 +213,10 @@
 
     <footer id="footer">
         <div class="overlay">
-            <div style="margin-bottom: 10%;"><h2>Get Design Sense with iCarve</h2><button class="yellowB">Try it</button></div>
+            <div style="margin-bottom: 10%;"><h2>Get Design Sense with iCarve</h2><button class="yellowB">Shop Now</button></div>
             <div class="content">
                 <div class="copyright">
-                    &copy; 2024 Your Company Name   <button class="yellowB" style="margin-left: 2px ;">Download Our App</button>
+                    &copy; 2024 ICarve  <button class="yellowB" style="margin-left: 2px ;">Download Our App</button>
                 </div>
                 <div class="download-app">
                   
@@ -214,7 +228,25 @@
             </div>
         </div>
     </footer>
+<script> 
+        const menuIcon = document.getElementById("menu-icon");
+        const lines = document.getElementById('show');
+        const cross = document.getElementById('hide');
+        const navLinks = document.querySelector(".menu-items");
 
+        menuIcon.addEventListener("click", function () {
+            console.log('touch')
+            navLinks.classList.toggle("active");
+            // Toggle the display of lines and cross
+            if (lines.style.display === 'none') {
+                lines.style.display = 'block';
+                cross.style.display = 'none';
+            } else {
+                lines.style.display = 'none';
+                cross.style.display = 'block';
+            }
+        });
+</script>
 </body>
 
 </html>
