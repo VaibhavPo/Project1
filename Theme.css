@@ -1,0 +1,146 @@
+/* Import Roboto and Roboto Condensed fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Define font families */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif; /* Roboto Condensed for headings */
+}
+
+/* Import Roboto Slab font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Define font family for slab serif font */
+.prominent-text {
+    font-family: 'Roboto Slab', serif; /* Roboto Slab for prominent text elements */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    background-color: black;
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 28.8px;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    overflow-x: hidden;
+}
+h1 {
+    /* font-family: "Poppins", sans-serif; */
+    font-size: 60px;
+    /* color: rgb(33, 33, 33); */
+    font-weight: 600;
+    line-height: 66px;
+    margin-top: 3px;
+    /* Remove default top margin */
+
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 49.5px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+h5 {
+
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-bottom: 20px;
+
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    color: rgb(168, 158, 158);
+    font-size: 18px;
+    font-weight: 300;
+
+}
+/* div{
+    margin-top: 5px;
+} */
+section{
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+.yellowB {
+    border: 2px solid RGB(255, 170, 92);
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: rgb(254, 123, 1);
+    font-size: 16px;
+    font-weight: bold;
+}
+.yellowB:hover{
+    background-color: rgb(224, 117, 17);
+}
+
+
+/* Navbar */
+nav {
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.navbar {
+    z-index: 1000;
+    position: fixed;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    /* Adjust blur level */
+
+    background-color: rgba(217, 199, 199, 0.2);
+    border-radius: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.navbar .language-selector {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+}
+
+.navbar .language-selector select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+}
