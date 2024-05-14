@@ -31,7 +31,7 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
-  border: 2px solid rgb(212, 119, 31); 
+  border: 2px solid rgba(212, 118, 31, 0.2); 
     background: transparent; 
     /* background: #aadd9343; */
     margin: 10px;

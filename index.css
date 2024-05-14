@@ -207,6 +207,9 @@
 
 
         @media only screen and (max-width: 768px){
+            .menu-items a{
+                color: white !important;
+            }
             #head{
                 margin-top: 150px;
             }
