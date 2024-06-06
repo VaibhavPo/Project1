@@ -140,8 +140,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
+    /* background-filter: blur(10px); */
     /* Adjust blur level */
+    background-image: url("Wooden/Wooden_2.jpg");
     background-color: #ffd7937d;
     border-radius: 30px;
 }

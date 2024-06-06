@@ -1,5 +1,5 @@
 .container_scroll {
-    max-width: 200vw;
+    max-width: 98vw;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -8,6 +8,7 @@
     /* flex-wrap: wrap; Allow wrapping */
     justify-content: center; /* Center align items */
     animation: slideCards 30s linear infinite; /* Apply animation */
+    
 }
 
 .container2_scroll {
@@ -23,9 +24,10 @@
 }
 
 .card {
-    /* width: 17%; */ /* Remove fixed width */
-    flex: 0 0 calc(33% - 40px); /* Adjust as needed */
-    margin: 20px 1%;
+    width: 17%;
+    /* flex: 0 0 calc(33% - 40px); Adjust  */
+
+    /* margin: 20px 1%; */
     background-color: #333;
     color: white;
     border-radius: 8px;
@@ -124,7 +126,7 @@
             margin: 10px 5px 0 5px;
             height: 400px;
             /* Adjust height as needed */
-            background-image: url('Assets/bookbg.jpg');
+            background-image: url('Wooden/Wooden_3.jpg');
             /* Specify your background image */
             background-size: cover;
         }
@@ -177,10 +179,29 @@
             width: 70%;
         }
 
-        
+        .quickSec{
+            display: flex;
+           
+            flex-direction: row;
+            /* justify-items: self-start; */
+            /* align-items: center; */
+            text-align: left;
+            margin-bottom: 2% !important;
+        }
+
         /* Keyframes for card animation */
 
-     
+        .quickSec > div {
+            flex: 1; /* This ensures equal width */
+            padding: 10px; /* Optional: Add padding for spacing */
+            /* border: 1px solid #ddd; Optional: Add border for visibility */
+            box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
+        }
+
+        .aa:hover{
+            text-decoration: underline !important;
+        }
+        
         @keyframes slideCards {
             0% {
                 transform: translateX(100%);
@@ -214,7 +235,8 @@
                 margin-top: 150px;
             }
             .card{
-                flex: 0 0 calc(100% - 40px); /* Adjust as needed */
+                /* flex: 0 0 calc(100% - 40px); Adjust as needed */
+                /* width: 30%; */
 
             }
             .DScontainer{
@@ -240,5 +262,11 @@
             }
             .rev{
                 flex-direction: column-reverse;
+            }
+            .quickSec{
+                flex-direction: column;
+            }
+            footer{
+                height: 550px;
             }
         }
